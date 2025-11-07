@@ -127,16 +127,16 @@ def uirectangle():
         printrectangle(height,width)
         
 def evaluate():
-    holeNum=int(input("what hole are you on?"))
+    holeNum=str(input("what hole are you on?"))
     parValue=int(input("What is the value of par?"))
-    stokes=int(input("How many strokes did you need to complete the hole?"))
+    strokes=int(input("How many strokes did you need to complete the hole?"))
     score= strokes-parValue
     scoreSlang=0
     special=0
     if score == 0:
-            scoreSlang = "even par"
+        scoreSlang = "even par"
     elif score == 1:
-                scoreSlang = "Bogey"
+        scoreSlang = "Bogey"
     elif score == 2:
         scoreSlang = "Double Bogey"
     elif score == 3:
@@ -161,9 +161,7 @@ def evaluate():
         scoreSlang == "Condor"
     elif score == -5:
         scoreSlang == "Ostrich"
-    elif score == parValue*2
-        scoreSlang == "Beagle"
-    else
+    else:
         scoreSlang = "I don't know"
     if strokes ==1:
         special="with a Hole in One!"
@@ -173,9 +171,23 @@ def evaluate():
         special="with a Snowman."
     elif strokes ==10:
         special ="with a Bo Derek."
-    else
+    else:
         special= "."
-        print("On hole " holeNum "a par " parValue " you shot a " scoreSlang " " special)
+    if strokes == parValue*2:
+        scoreSlang = "Beagle"
+    print("On hole "+ holeNum +" a par " + str(parValue) + " you shot a " + scoreSlang + " " + special)
+
+    def menuItemFour():
+        startnum=(int(input(("Starting number":))
+        endnum=(int(input(("Ending number":))
+        for i in range(Startnum,endnum))
+        for number in range
+    
+
+
+    
+def menuItemThree():
+    evaluate()
     
         
 
