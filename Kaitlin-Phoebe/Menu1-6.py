@@ -8,6 +8,7 @@
 # Copyright:   (c) adsmith 2024
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
+import turtle
 
 def menu():
     user = 0
@@ -59,6 +60,124 @@ def menuItemSeven():
 
 def main():
     menu()
+
+def menuItemOne():
+    bobjr = turtle.Turtle()
+    width = 2.544
+    height = 3.55
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+    width = float(input("enter width"))
+    height = float(input("enter height"))
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+    width = 5
+    height = 2
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+    width = float(input("enter width again"))
+    height = float(input("enter height again"))
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+    width = 10
+    height = 10
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+    width = float(input("enter width AGAIN AGAIN"))
+    height = float(input("enter height AGAIN AGAIN"))
+    for i in range(2):
+        bobjr.forward(width)
+        bobjr.left(90)
+        bobjr.forward(height)
+        bobjr.left(90)
+
+def printrectangle(height,width):
+    
+        bobjr = turtle.Turtle()
+        perimeter= 12.188
+        area= 9.031
+        for i in range(2):
+            bobjr.forward(width)
+            bobjr.left(90)
+            bobjr.forward(height)
+            bobjr.left(90)
+        
+def menuItemTwo():
+        bobjr = turtle.Turtle()
+        printrectangle(3.55,2.544)
+        uirectangle()
+def uirectangle():
+        height=float(input("enter height"))
+        width=float(input("enter width"))
+        printrectangle(height,width)
+        
+def evaluate():
+    holeNum=int(input("what hole are you on?"))
+    parValue=int(input("What is the value of par?"))
+    stokes=int(input("How many strokes did you need to complete the hole?"))
+    score= strokes-parValue
+    scoreSlang=0
+    special=0
+    if score == 0:
+            scoreSlang = "even par"
+    elif score == 1:
+                scoreSlang = "Bogey"
+    elif score == 2:
+        scoreSlang = "Double Bogey"
+    elif score == 3:
+        scoreSlang = "Triple Bogey"
+    elif score == 4:
+        scoreSlang = "4 over par"
+    elif score == 5:
+        scoreSlang = "5 over par"
+    elif score == 6:
+        scoreSlang = "6 over par"
+    elif score == 7:
+        scoreSlang = "7 over par"
+    elif score == 8:
+        scoreSlang = "8 over par"
+    elif score == -1:
+        scoreSlang = "Birdie"
+    elif score == -2:
+        scoreSlang = "Eagle"
+    elif score == -3:
+        scoreSlang = "Albatross"
+    elif score == -4:
+        scoreSlang == "Condor"
+    elif score == -5:
+        scoreSlang == "Ostrich"
+    elif score == parValue*2
+        scoreSlang == "Beagle"
+    else
+        scoreSlang = "I don't know"
+    if strokes ==1:
+        special="with a Hole in One!"
+    elif strokes ==4:
+        special="with a Sailboat."
+    elif strokes ==8:
+        special="with a Snowman."
+    elif strokes ==10:
+        special ="with a Bo Derek."
+    else
+        special= "."
+        print("On hole " holeNum "a par " parValue " you shot a " scoreSlang " " special)
+    
+        
 
 if __name__ == '__main__':
     main()
