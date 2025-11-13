@@ -43,7 +43,10 @@ def printMenu():
     print("8. exit")
 
 def menuItemOne():
-    print("This is Menu Item 1")
+    mylist = [1,2,3,4,5]
+    print(mylist)
+    mylist.append(int(input("Type a number to add to the list: ")))
+    print(mylist)
 def menuItemTwo():
     print("This is Menu Item 2")
 def menuItemThree():
